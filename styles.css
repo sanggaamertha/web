@@ -1,0 +1,10 @@
+body {
+    background-color: #f0f0f0; /* Ganti dengan kode warna yang Anda inginkan */
+  }
+  
+ 
+  body {
+    background-image: url('backgroundtest.jpeg'); /* Ganti dengan URL gambar yang ingin Anda gunakan */
+    background-size: cover; /* Untuk memastikan gambar mengisi seluruh latar belakang */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+  }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>di buka yaa cantik</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btn-lanjutkan {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tombol-besar {
+            padding: 20px 40px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="tampilkanAlert()" class="tombol-besar">dear kayla</button>
+
+<div id="overlay" class="overlay">
+    <div class="modal">
+        <p> ada yang mau aku sampaiin nih sama kamu ikutin ampe akhir yak</p>
+        
+       <button class="btn-lanjutkan" onclick="tampilkanAlert2()">lanjutkan</button>
+
+    </div>
+</div>
+
+<div id="overlay2" class="overlay">
+    <div class="modal">
+        <p>sebelumnya aku mau nanya nihh gimana moodnya hari ini, bisa di jawab yaa </p>
+        <button class="btn-lanjutkan" onclick="tampilkanAlert3()">45%</button>
+        <button class="btn-lanjutkan" onclick="tampilkanAlert3()">75%</button>
+        <button class="btn-lanjutkan" onclick="tampilkanAlert3()">100%</button>
+
+
+
+</div>
+<div id="overlay3" class="overlay">
+    <div class="modal">
+        <p>aku harap dengan ini mungkin kamu bisa lebih seneng lagi yaa kalo mood kamu lagi turun semoga ini juga bisa ngebalikin lagi kayak semula mood kamu yaa</p>
+        <button class="btn-lanjutkan" onclick="tampilkanAlert4()">lanjutkan</button>
+
+       
+        
+
+    </div>
+</div>
+<div id="overlay4" class="overlay">
+    <div class="modal">
+        <p> </p>
+        
+        <button class="btn-lanjutkan" onclick="tampilkanAlert5()">lanjutkan</button>
+    </div>
+</div>
+<div id="overlay5" class="overlay">
+    <div class="modal">
+        <p> babi lu</p>
+        
+        <button class="btn-lanjutkan" onclick="tutupAlert()">OK</button>
+    </div>
+</div>
+
+<script>
+    function tampilkanAlert() {
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "flex";
+    }
+    function tampilkanAlert2() {
+        var overlay = document.getElementById("overlay2");
+        var overlay1 = document.getElementById("overlay");
+        overlay.style.display = "flex";
+        overlay1.style.display = "none";
+    }
+    function tampilkanAlert3() {
+        var overlay = document.getElementById("overlay3");
+        var overlay2 = document.getElementById("overlay2");
+        overlay.style.display = "flex";
+        overlay2.style.display = "none";
+    }
+    function tampilkanAlert4() {
+        var overlay = document.getElementById("overlay4");
+        var overlay3 = document.getElementById("overlay3");
+        overlay.style.display = "flex";
+        overlay3.style.display = "none";
+    }
+    function tampilkanAlert5() {
+        var overlay = document.getElementById("overlay5");
+        var overlay4 = document.getElementById("overlay4");
+        overlay.style.display = "flex";
+        overlay4.style.display = "none";
+    }
+    
+
+    function tutupAlert() {
+        
+        var overlay5 = document.getElementById("overlay5");
+        
+        overlay5.style.display = "none";
+    }
+    function tutupAlert2() {
+        
+        var overlay6 = document.getElementById("overlay");
+        
+        overlay6.style.display = "none";
+    }
+
+    
+
+    function lanjutkan() {
+
+        alert("mantap");
+        tutupAlert();
+    }
+</script>
+
+</body>
+</html>
